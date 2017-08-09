@@ -1,0 +1,29 @@
+﻿<Properties StartupItem="Simple_RPG.Plugins.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Interactable.cs">
+    <Files>
+      <File FileName="Assets\scripts\IWeapon.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\InventoryController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Item.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\PlayerWeaponController.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\BaseStat.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\NPC.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Sword.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Staff.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\IProjectileWeapon.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\StatBonus.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\PickupItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Slime.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\WorldInteraction.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\ActionItem.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\CharacterStats.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\DialogueSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Fireball.cs" Line="1" Column="1" />
+      <File FileName="Assets\scripts\Interactable.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
