@@ -12,9 +12,5 @@ public class UIEventHandler : MonoBehaviour {
         OnItemAddedToInventory(item);
     }
 
-	// Use this for initialization
-	void Start () {
-		
-	}
 	
 }
