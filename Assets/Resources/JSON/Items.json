@@ -3,24 +3,35 @@
     "objectSlug": "sword",
     "itemName": "Sword",
     "description": "A long, sharp blade.",
-    "itemType":  "Weapon",
+    "itemType": "Weapon",
     "actionName": "Equip",
     "itemModifier": 0,
     "stats": [
       {
-        "statType": "Power",
         "baseValue": 25,
         "statName": "Power"
       },
       {
-        "statType": "Toughness",
         "baseValue": 4,
-        "statName": "Tougness"
+        "statName": "Vitality"
+      }
+    ]
+  },
+  {
+    "objectSlug": "staff",
+    "itemName": "Staff",
+    "description": "A long, fast, Staff.",
+    "itemType": "Weapon",
+    "actionName": "Equip",
+    "itemModifier": 0,
+    "stats": [
+      {
+        "baseValue": 25,
+        "statName": "Power"
       },
       {
-        "statType": "AttackSpeed",
-        "baseValue": 4,
-        "statName": "Attack Speed"
+        "baseValue": 8,
+        "statName": "Vitality"
       }
     ]
   },

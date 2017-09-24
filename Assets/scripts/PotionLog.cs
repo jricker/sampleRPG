@@ -7,6 +7,7 @@ public class PotionLog : MonoBehaviour, IConsumable {
     public void Consume()
     {
         Debug.Log("you drank a swig of the potion, cool!");
+        Destroy(gameObject);
         //throw new NotImplementedException();
     }
 

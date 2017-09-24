@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class InventoryController : MonoBehaviour
-{
+public class InventoryController : MonoBehaviour{
     public static InventoryController Instance { get; set; }
     public PlayerWeaponController playerWeaponController;
     public ConsumableController consumableController;
@@ -13,15 +12,18 @@ public class InventoryController : MonoBehaviour
 
     private void Start()
     {
+        Instance = this;
         if (Instance != null && Instance != this)
-            //Destroy(gameObject);
-            Debug.Log("object destroyed in Inventory Controller");
+            Destroy(gameObject);
+            //Debug.Log("object destroyed in Inventory Controller");
         else
             Instance = this;
         playerWeaponController = GetComponent<PlayerWeaponController>();
         consumableController = GetComponent<ConsumableController>();
         GiveItem("sword");
         GiveItem("potion_log");
+        GiveItem("staff");
+
     }
 
     public void GiveItem(string itemSlug)

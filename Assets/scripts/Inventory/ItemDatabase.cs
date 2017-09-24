@@ -10,9 +10,10 @@ public class ItemDatabase : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        Instance = this;
         if (Instance != null && Instance != this)
-            //Destroy(gameObject);
-            Debug.Log("object destroyed in ItemDatabase");
+            Destroy(gameObject);
+            //Debug.Log("object destroyed in ItemDatabase");
         else
             Instance = this;
         BuildDatabase();
