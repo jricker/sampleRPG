@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class PlayerWeaponController : MonoBehaviour
 {
-
     public GameObject playerHand;
     public GameObject EquippedWeapon { get; set; }
-    public GameObject player;
+    //public GameObject player;
     //public GameObject projectileSpawn;
 
     Transform spawnProjectile;
     IWeapon equippedWeapon;
-
     CharacterStats characterStats;
 
     private void Start()
     {
-        player = GameObject.Find("Cube").gameObject;
-        spawnProjectile = player.transform.Find("ProjectileSpawn");
+        //player = GameObject.Find("Cube").gameObject;
+        //spawnProjectile = player.transform.Find("ProjectileSpawn");
+        spawnProjectile = transform.Find("ProjectileSpawn");
         //spawnProjectile = projectileSpawn.transform;
-        characterStats = GetComponent<CharacterStats>();
+        //characterStats = GetComponent<CharacterStats>();
+        characterStats = GetComponent<Player>().characterStats;
     }
-
+    
     public void EquipWeapon(Item itemToEquip)
     {
         if (EquippedWeapon != null)
@@ -41,7 +41,7 @@ public class PlayerWeaponController : MonoBehaviour
         }
         else
         {
-            Debug.Log("nothing is showing in projectile weapon");
+            Debug.Log("not a projectile weapon");
         }
 
         equippedWeapon.Stats = itemToEquip.Stats;//  (itemToEquip.Stats);

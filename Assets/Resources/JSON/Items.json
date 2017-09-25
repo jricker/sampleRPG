@@ -8,12 +8,19 @@
     "itemModifier": 0,
     "stats": [
       {
-        "baseValue": 25,
-        "statName": "Power"
+        "StatType": "Power",
+        "baseValue": 2,
+        "statName": "Power power"
       },
       {
+        "StatType": "AttackSpeed",
+        "baseValue": 25,
+        "statName": "Attack Speed"
+      },
+      {
+        "StatType": "Toughness",
         "baseValue": 4,
-        "statName": "Vitality"
+        "statName": "Toughness Defense"
       }
     ]
   },

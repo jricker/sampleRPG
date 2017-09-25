@@ -12,7 +12,7 @@ public class InventoryController : MonoBehaviour{
 
     private void Start()
     {
-        Instance = this;
+        //Instance = this;
         if (Instance != null && Instance != this)
             Destroy(gameObject);
             //Debug.Log("object destroyed in Inventory Controller");
