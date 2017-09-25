@@ -8,8 +8,12 @@ public class Player : MonoBehaviour {
 
     private void Start()
     {
-        characterStats = new CharacterStats(10,10,10);
-
-
+        Debug.Log("should be character stats time.");
+        characterStats = new CharacterStats(10,20,30);
+        Debug.Log(characterStats.stats[0]);
+        //foreach (BaseStat x in characterStats.stats)
+        //{
+        //    Debug.Log(x.BaseValue);
+        //}
     }
 }

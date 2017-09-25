@@ -20,7 +20,6 @@ public class CharacterStats {
     {
         Debug.Log("in the ChraacterStats class, GetStat method, Base Stat return");
         return this.stats.Find(x => x.StatType == stat);
-        Debug.Log(stat);
     }
 
 
