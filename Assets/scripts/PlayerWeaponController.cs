@@ -6,22 +6,21 @@ public class PlayerWeaponController : MonoBehaviour
 {
     public GameObject playerHand;
     public GameObject EquippedWeapon { get; set; }
-    //public GameObject player;
+    public GameObject player;
     //public GameObject projectileSpawn;
 
     Transform spawnProjectile;
     IWeapon equippedWeapon;
     CharacterStats characterStats;
     Player playerObject;
+    //GameObject player;
 
     private void Start()
     {
-        //player = GameObject.Find("Cube").gameObject;
+        playerObject = GetComponent<Player>();
         //spawnProjectile = player.transform.Find("ProjectileSpawn");
         spawnProjectile = transform.Find("ProjectileSpawn");
-        //spawnProjectile = projectileSpawn.transform;
-        //characterStats = GetComponent<CharacterStats>();
-        characterStats = playerObject.GetComponent<Player>().characterStats;
+        characterStats = playerObject.characterStats;
     }
     
     public void EquipWeapon(Item itemToEquip)
@@ -47,7 +46,7 @@ public class PlayerWeaponController : MonoBehaviour
 
         equippedWeapon.Stats = itemToEquip.Stats;//  (itemToEquip.Stats);
         EquippedWeapon.transform.SetParent(playerHand.transform);
-        characterStats.AddStatBonus(itemToEquip.Stats);
+        playerObject.characterStats.AddStatBonus(itemToEquip.Stats);
     }
 
     private void Update()
