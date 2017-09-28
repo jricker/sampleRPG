@@ -7,6 +7,7 @@ public class Sword : MonoBehaviour, IWeapon {
     private Animator animator;
     public List<BaseStat> Stats { get; set; }
     public CharacterStats CharacterStats;
+    int powerLevel;
 
     private void Start()
     {
@@ -28,10 +29,10 @@ public class Sword : MonoBehaviour, IWeapon {
     {
         if (col.tag == "Enemy")
         {
-            //col.GetComponent<IEnemy>().TakeDamage(Stats[0].GetCalculatedStatValue());
-            //col.GetComponent<IEnemy>().TakeDamage(5);
-
-            col.GetComponent<IEnemy>().TakeDamage(col.GetComponent<CharacterStats> CharacterStats.GetStat(BaseStat.BaseStatType.Power).GetCalculatedStatValue());
+            col.GetComponent<IEnemy>().TakeDamage(CharacterStats.GetStat(BaseStat.BaseStatType.Power).GetCalculatedStatValue());
+            //col.GetComponent<IEnemy>().TakeDamage(GetCalculatedStatValue());
+            powerLevel = Stats.Find(x => x.StatName == "Power").BaseValue;
+            col.GetComponent<IEnemy>().TakeDamage(powerLevel);
         }
     }
 

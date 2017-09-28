@@ -9,8 +9,8 @@
     "stats": [
       {
         "StatType": "Power",
-        "baseValue": 2,
-        "statName": "Power power"
+        "baseValue": 15,
+        "statName": "Power"
       },
       {
         "StatType": "AttackSpeed",
